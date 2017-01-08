@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Tiago Justino - Software Developer
+    script type='text/javascript' src='jquery.js'
+    script type='text/javascript' src='js/app.js'
+    link rel="stylesheet" href="css/web.css"
+  body[class="preview" style="padding: 80px"]
+    div[class="navbar navbar-fixed-top"]
+      .navbar-inner
+        .container
+          a[class="brand" href="/"] Home
+          .nav-collapse
+            ul[class="nav"]
+          div align="right" style="padding-top:15px"
+            img#brflag.flag src="br.png" style="padding-right:5px"
+            img#enflag.flag src="en.png"
+    .container
+      == yield
+
+/ Add links to menu (put this under ul[class="nav"])
+/             li
+/               a[href="#about"] About
+/             li
+/               a[href="#resume"] Résumé
+/             li
+/               a[href="#contact"] Contact
